@@ -1,0 +1,1 @@
+<h1>Tristan Hardy: <%= mail_to  "tristan@tristanhardy.com" %></h1>
