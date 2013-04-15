@@ -2,6 +2,68 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
+html,
 body{
+	height: 100%;
 	background-color:rgb(238,238,238);
+}
+#wrap{
+	min-height:100%;
+	height: auto !important;
+	height:100%;
+	margin: 0 auto -60px;
+}
+#push,
+#footer{
+	height:60px;
+}
+#footer{
+	background-color: white;
+	padding-top:20px;
+	padding-left:100px;
+}
+#footer .muted{
+	font-size:30px;
+}
+
+@media(max-width:767px){
+	#footer{
+		margin-left:-20px;
+		margin-right:-20px;
+		padding-left:20px;
+		padding-right:20px;
+	}
+}
+
+.excited-item{
+	float:right;
+	margin-right:20px;
+}
+.worried-item{
+	margin-left:20px;
+	float:left;
+}
+.worried-list{
+	display:none;
+}
+.excited-list{
+	display:none;
+}
+.survey2{
+	font-size:30px;
+	padding:20px;
+	margin:20px;
+	}
+.survey1{
+	font-size:100px;
+	padding:50px;
+	border: white solid 10px;
+}
+.survey1-group{
+	width:100%;
+	margin-top:20px;
+}
+
+.span6{
+	text-align:center;
 }

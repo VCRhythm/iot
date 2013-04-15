@@ -1,4 +1,8 @@
 Iot::Application.routes.draw do
+
+	resources :survey_results
+
+
   resources :issues
 
 
