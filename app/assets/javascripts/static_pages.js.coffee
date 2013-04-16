@@ -7,7 +7,7 @@ $ ->
 		$('.excited-list').show()
 		$('.worried-list').hide()
 		$('#question-text').css 'color', 'black'
-		$('#question-text').text 'What Makes you excited?'
+		$('#question-text').text 'What makes you excited?'
 	$('.worried-button').click ->
 		$('.excited-list').hide()
 		$('.worried-list').show()
