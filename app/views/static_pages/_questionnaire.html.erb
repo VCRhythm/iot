@@ -6,13 +6,15 @@
 					<%= item.content %>
 				<% end %>
 			<% end %>
-			<%= render 'items/form', category: "worried" %>
+			<%= render 'items/form', category: 'worried' %>
 		</div>
 		<div class="btn-group excited-list" data-toggle="buttons-checkbox">
 			<% @excited_list.each do |item| %>
-				<%= button_to item.content, nil, class: "btn btn-info survey2 excited-item" %>
+				<%= button_tag type:'button', data:{id:item.id, rank:item.rank}, class: "survey2 excited-item btn btn-info" do %>
+					<%= item.content %>
+				<% end %>
 			<% end %>
-			<%= render 'items/form', category: "excited" %>
+			<%= render 'items/form', category: 'excited' %>
 		</div>
 	</div>
 </div>
