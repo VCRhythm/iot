@@ -14,5 +14,13 @@ $ ->
 		$('#question-text').css 'color', 'black'
 		$('#question-text').text 'What makes you worried?'
 	$('.survey2').click ->
+		path='/items/'+$(this).data 'id'
+		iterate=$(this).data 'rank'
+		if !$(this).hasClass('active')
+			iterate = iterate+1
+		$.ajax path,
+			type: 'put'
+			dataType: 'json'
+			data:{item:{rank: iterate}}
 		$('#question-text').css 'color', 'green'
 		$('#question-text').text 'Thanks for your input!'

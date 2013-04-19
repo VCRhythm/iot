@@ -66,10 +66,37 @@ body{
 	margin-bottom:0px;
 	padding-bottom:0px;
 }
-.survey2{
-	font-size:40px;
-	padding:20px;
-	margin:20px;
+#item_content.worried-add{
+	margin-left:20px;
+	margin-top:19px;
+	padding:13px;
+	color:white;
+	background-color:black;
+	font-size:20px;
+	float:left;
+}
+
+#item_content.excited-add{
+	float:right;
+	margin-right:20px;
+	margin-top:19px;
+	padding:13px;
+	color:white;
+	background-color:black;
+	font-size:20px;
+}
+
+
+.btn.survey2.worried-item{
+	font-size:20px;
+	padding:10px;
+	margin:20px 0 0 20px;
+	}
+
+.btn.survey2.excited-item{
+	font-size:20px;
+	padding:10px;
+	margin:20px 20px 0 0;
 	}
 
 .survey1{

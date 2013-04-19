@@ -1,5 +1,14 @@
 Iot::Application.routes.draw do
 
+  resources :items
+
+
+  resources :excited_items
+
+
+  resources :worried_items
+
+
 	resources :survey_results
 
 

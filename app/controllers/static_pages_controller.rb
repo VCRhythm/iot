@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
 	def index
 		@issues = Issue.all
-		@excited_list = ["Innovative Tech", "Business/Personal Efficiencies", "Smarter Data"]
-		@worried_list = ["Privacy Concerns", "Misuse of Data", "Uncomfortable "]
+		@excited_list = Item.where(category:"excited")
+		@worried_list = Item.where(category:"worried")
 	end
 end

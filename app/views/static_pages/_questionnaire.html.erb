@@ -2,13 +2,17 @@
 	<div class="span12">
 		<div class="btn-group worried-list" data-toggle="buttons-checkbox">
 			<% @worried_list.each do |item| %>
-				<%= button_to item, survey_results_path(survey_result:{content:item}), remote: true, class: "btn btn-info survey2 worried-item"%>
+				<%= button_tag type:'button', data:{id:item.id, rank:item.rank}, class: "survey2 worried-item btn btn-info" do %>
+					<%= item.content %>
+				<% end %>
 			<% end %>
+			<%= render 'items/form', category: "worried" %>
 		</div>
 		<div class="btn-group excited-list" data-toggle="buttons-checkbox">
 			<% @excited_list.each do |item| %>
-				<%= button_to item, survey_results_path(survey_result:{content:item}), remote: true, class: "btn btn-info survey2 excited-item"%>
+				<%= button_to item.content, nil, class: "btn btn-info survey2 excited-item" %>
 			<% end %>
+			<%= render 'items/form', category: "excited" %>
 		</div>
 	</div>
 </div>
