@@ -1,5 +1,8 @@
 Iot::Application.routes.draw do
 
+  resources :visitors, only: :create
+
+
   resources :items
 
 
